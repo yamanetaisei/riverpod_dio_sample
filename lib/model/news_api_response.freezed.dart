@@ -20,6 +20,7 @@ NewAPIResponse _$NewAPIResponseFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$NewAPIResponse {
+  String get status => throw _privateConstructorUsedError;
   int get totalResults => throw _privateConstructorUsedError;
   List<NewsAPIArticle> get articles => throw _privateConstructorUsedError;
 
@@ -34,7 +35,7 @@ abstract class $NewAPIResponseCopyWith<$Res> {
   factory $NewAPIResponseCopyWith(
           NewAPIResponse value, $Res Function(NewAPIResponse) then) =
       _$NewAPIResponseCopyWithImpl<$Res>;
-  $Res call({int totalResults, List<NewsAPIArticle> articles});
+  $Res call({String status, int totalResults, List<NewsAPIArticle> articles});
 }
 
 /// @nodoc
@@ -48,10 +49,15 @@ class _$NewAPIResponseCopyWithImpl<$Res>
 
   @override
   $Res call({
+    Object? status = freezed,
     Object? totalResults = freezed,
     Object? articles = freezed,
   }) {
     return _then(_value.copyWith(
+      status: status == freezed
+          ? _value.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as String,
       totalResults: totalResults == freezed
           ? _value.totalResults
           : totalResults // ignore: cast_nullable_to_non_nullable
@@ -71,7 +77,7 @@ abstract class _$$_NewAPIResponseCopyWith<$Res>
           _$_NewAPIResponse value, $Res Function(_$_NewAPIResponse) then) =
       __$$_NewAPIResponseCopyWithImpl<$Res>;
   @override
-  $Res call({int totalResults, List<NewsAPIArticle> articles});
+  $Res call({String status, int totalResults, List<NewsAPIArticle> articles});
 }
 
 /// @nodoc
@@ -87,10 +93,15 @@ class __$$_NewAPIResponseCopyWithImpl<$Res>
 
   @override
   $Res call({
+    Object? status = freezed,
     Object? totalResults = freezed,
     Object? articles = freezed,
   }) {
     return _then(_$_NewAPIResponse(
+      status: status == freezed
+          ? _value.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as String,
       totalResults: totalResults == freezed
           ? _value.totalResults
           : totalResults // ignore: cast_nullable_to_non_nullable
@@ -109,13 +120,16 @@ class _$_NewAPIResponse
     with DiagnosticableTreeMixin
     implements _NewAPIResponse {
   _$_NewAPIResponse(
-      {required this.totalResults,
+      {required this.status,
+      required this.totalResults,
       required final List<NewsAPIArticle> articles})
       : _articles = articles;
 
   factory _$_NewAPIResponse.fromJson(Map<String, dynamic> json) =>
       _$$_NewAPIResponseFromJson(json);
 
+  @override
+  final String status;
   @override
   final int totalResults;
   final List<NewsAPIArticle> _articles;
@@ -127,7 +141,7 @@ class _$_NewAPIResponse
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
-    return 'NewAPIResponse(totalResults: $totalResults, articles: $articles)';
+    return 'NewAPIResponse(status: $status, totalResults: $totalResults, articles: $articles)';
   }
 
   @override
@@ -135,6 +149,7 @@ class _$_NewAPIResponse
     super.debugFillProperties(properties);
     properties
       ..add(DiagnosticsProperty('type', 'NewAPIResponse'))
+      ..add(DiagnosticsProperty('status', status))
       ..add(DiagnosticsProperty('totalResults', totalResults))
       ..add(DiagnosticsProperty('articles', articles));
   }
@@ -144,6 +159,7 @@ class _$_NewAPIResponse
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_NewAPIResponse &&
+            const DeepCollectionEquality().equals(other.status, status) &&
             const DeepCollectionEquality()
                 .equals(other.totalResults, totalResults) &&
             const DeepCollectionEquality().equals(other._articles, _articles));
@@ -153,6 +169,7 @@ class _$_NewAPIResponse
   @override
   int get hashCode => Object.hash(
       runtimeType,
+      const DeepCollectionEquality().hash(status),
       const DeepCollectionEquality().hash(totalResults),
       const DeepCollectionEquality().hash(_articles));
 
@@ -171,12 +188,15 @@ class _$_NewAPIResponse
 
 abstract class _NewAPIResponse implements NewAPIResponse {
   factory _NewAPIResponse(
-      {required final int totalResults,
+      {required final String status,
+      required final int totalResults,
       required final List<NewsAPIArticle> articles}) = _$_NewAPIResponse;
 
   factory _NewAPIResponse.fromJson(Map<String, dynamic> json) =
       _$_NewAPIResponse.fromJson;
 
+  @override
+  String get status;
   @override
   int get totalResults;
   @override

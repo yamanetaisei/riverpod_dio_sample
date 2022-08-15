@@ -8,6 +8,7 @@ part 'news_api_response.g.dart';
 @freezed
 class NewAPIResponse with _$NewAPIResponse {
   factory NewAPIResponse({
+    required String status,
     required int totalResults,
     required List<NewsAPIArticle> articles,
   }) = _NewAPIResponse;
