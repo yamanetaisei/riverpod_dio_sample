@@ -6,12 +6,12 @@ part 'news_api_response.freezed.dart';
 part 'news_api_response.g.dart';
 
 @freezed
-class NewAPIResponse with _$NewAPIResponse {
-  factory NewAPIResponse({
+class NewsAPIResponse with _$NewsAPIResponse {
+  factory NewsAPIResponse({
     required String status,
     required int totalResults,
     required List<NewsAPIArticle> articles,
-  }) = _NewAPIResponse;
+  }) = _NewsAPIResponse;
 
-  factory NewAPIResponse.fromJson(Map<String, dynamic> json) => _$NewAPIResponseFromJson(json);
+  factory NewsAPIResponse.fromJson(Map<String, dynamic> json) => _$NewsAPIResponseFromJson(json);
 }

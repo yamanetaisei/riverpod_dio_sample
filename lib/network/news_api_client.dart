@@ -5,7 +5,7 @@ import '../key/NewsAPIKey.dart';
 final key = newsAPIKey;
 
 class NewsAPIClient {
-  Future<NewAPIResponse> fetchNewAPIResponse(String q) async {
+  Future<NewsAPIResponse> fetchNewsAPIResponse(String q) async {
     final dio = Dio();
     const url = "https://newsapi.org/v2/everything";
     final response = await dio.get(
@@ -23,7 +23,8 @@ class NewsAPIClient {
     if (response.statusCode == 200) {
       try {
         final dataWithResponse = response.data as dynamic;
-        final data = dataWithResponse.map((e) => NewAPIResponse.fromJson(e));
+        print(dataWithResponse);
+        final data = dataWithResponse.map((e) => NewsAPIResponse.fromJson(e));
         return data;
       } catch(e) {
         rethrow;

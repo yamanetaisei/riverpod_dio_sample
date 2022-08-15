@@ -14,38 +14,38 @@ T _$identity<T>(T value) => value;
 final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
-NewAPIResponse _$NewAPIResponseFromJson(Map<String, dynamic> json) {
-  return _NewAPIResponse.fromJson(json);
+NewsAPIResponse _$NewsAPIResponseFromJson(Map<String, dynamic> json) {
+  return _NewsAPIResponse.fromJson(json);
 }
 
 /// @nodoc
-mixin _$NewAPIResponse {
+mixin _$NewsAPIResponse {
   String get status => throw _privateConstructorUsedError;
   int get totalResults => throw _privateConstructorUsedError;
   List<NewsAPIArticle> get articles => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $NewAPIResponseCopyWith<NewAPIResponse> get copyWith =>
+  $NewsAPIResponseCopyWith<NewsAPIResponse> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $NewAPIResponseCopyWith<$Res> {
-  factory $NewAPIResponseCopyWith(
-          NewAPIResponse value, $Res Function(NewAPIResponse) then) =
-      _$NewAPIResponseCopyWithImpl<$Res>;
+abstract class $NewsAPIResponseCopyWith<$Res> {
+  factory $NewsAPIResponseCopyWith(
+          NewsAPIResponse value, $Res Function(NewsAPIResponse) then) =
+      _$NewsAPIResponseCopyWithImpl<$Res>;
   $Res call({String status, int totalResults, List<NewsAPIArticle> articles});
 }
 
 /// @nodoc
-class _$NewAPIResponseCopyWithImpl<$Res>
-    implements $NewAPIResponseCopyWith<$Res> {
-  _$NewAPIResponseCopyWithImpl(this._value, this._then);
+class _$NewsAPIResponseCopyWithImpl<$Res>
+    implements $NewsAPIResponseCopyWith<$Res> {
+  _$NewsAPIResponseCopyWithImpl(this._value, this._then);
 
-  final NewAPIResponse _value;
+  final NewsAPIResponse _value;
   // ignore: unused_field
-  final $Res Function(NewAPIResponse) _then;
+  final $Res Function(NewsAPIResponse) _then;
 
   @override
   $Res call({
@@ -71,25 +71,25 @@ class _$NewAPIResponseCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$$_NewAPIResponseCopyWith<$Res>
-    implements $NewAPIResponseCopyWith<$Res> {
-  factory _$$_NewAPIResponseCopyWith(
-          _$_NewAPIResponse value, $Res Function(_$_NewAPIResponse) then) =
-      __$$_NewAPIResponseCopyWithImpl<$Res>;
+abstract class _$$_NewsAPIResponseCopyWith<$Res>
+    implements $NewsAPIResponseCopyWith<$Res> {
+  factory _$$_NewsAPIResponseCopyWith(
+          _$_NewsAPIResponse value, $Res Function(_$_NewsAPIResponse) then) =
+      __$$_NewsAPIResponseCopyWithImpl<$Res>;
   @override
   $Res call({String status, int totalResults, List<NewsAPIArticle> articles});
 }
 
 /// @nodoc
-class __$$_NewAPIResponseCopyWithImpl<$Res>
-    extends _$NewAPIResponseCopyWithImpl<$Res>
-    implements _$$_NewAPIResponseCopyWith<$Res> {
-  __$$_NewAPIResponseCopyWithImpl(
-      _$_NewAPIResponse _value, $Res Function(_$_NewAPIResponse) _then)
-      : super(_value, (v) => _then(v as _$_NewAPIResponse));
+class __$$_NewsAPIResponseCopyWithImpl<$Res>
+    extends _$NewsAPIResponseCopyWithImpl<$Res>
+    implements _$$_NewsAPIResponseCopyWith<$Res> {
+  __$$_NewsAPIResponseCopyWithImpl(
+      _$_NewsAPIResponse _value, $Res Function(_$_NewsAPIResponse) _then)
+      : super(_value, (v) => _then(v as _$_NewsAPIResponse));
 
   @override
-  _$_NewAPIResponse get _value => super._value as _$_NewAPIResponse;
+  _$_NewsAPIResponse get _value => super._value as _$_NewsAPIResponse;
 
   @override
   $Res call({
@@ -97,7 +97,7 @@ class __$$_NewAPIResponseCopyWithImpl<$Res>
     Object? totalResults = freezed,
     Object? articles = freezed,
   }) {
-    return _then(_$_NewAPIResponse(
+    return _then(_$_NewsAPIResponse(
       status: status == freezed
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -116,17 +116,17 @@ class __$$_NewAPIResponseCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_NewAPIResponse
+class _$_NewsAPIResponse
     with DiagnosticableTreeMixin
-    implements _NewAPIResponse {
-  _$_NewAPIResponse(
+    implements _NewsAPIResponse {
+  _$_NewsAPIResponse(
       {required this.status,
       required this.totalResults,
       required final List<NewsAPIArticle> articles})
       : _articles = articles;
 
-  factory _$_NewAPIResponse.fromJson(Map<String, dynamic> json) =>
-      _$$_NewAPIResponseFromJson(json);
+  factory _$_NewsAPIResponse.fromJson(Map<String, dynamic> json) =>
+      _$$_NewsAPIResponseFromJson(json);
 
   @override
   final String status;
@@ -141,14 +141,14 @@ class _$_NewAPIResponse
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
-    return 'NewAPIResponse(status: $status, totalResults: $totalResults, articles: $articles)';
+    return 'NewsAPIResponse(status: $status, totalResults: $totalResults, articles: $articles)';
   }
 
   @override
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
     super.debugFillProperties(properties);
     properties
-      ..add(DiagnosticsProperty('type', 'NewAPIResponse'))
+      ..add(DiagnosticsProperty('type', 'NewsAPIResponse'))
       ..add(DiagnosticsProperty('status', status))
       ..add(DiagnosticsProperty('totalResults', totalResults))
       ..add(DiagnosticsProperty('articles', articles));
@@ -158,7 +158,7 @@ class _$_NewAPIResponse
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_NewAPIResponse &&
+            other is _$_NewsAPIResponse &&
             const DeepCollectionEquality().equals(other.status, status) &&
             const DeepCollectionEquality()
                 .equals(other.totalResults, totalResults) &&
@@ -175,25 +175,25 @@ class _$_NewAPIResponse
 
   @JsonKey(ignore: true)
   @override
-  _$$_NewAPIResponseCopyWith<_$_NewAPIResponse> get copyWith =>
-      __$$_NewAPIResponseCopyWithImpl<_$_NewAPIResponse>(this, _$identity);
+  _$$_NewsAPIResponseCopyWith<_$_NewsAPIResponse> get copyWith =>
+      __$$_NewsAPIResponseCopyWithImpl<_$_NewsAPIResponse>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_NewAPIResponseToJson(
+    return _$$_NewsAPIResponseToJson(
       this,
     );
   }
 }
 
-abstract class _NewAPIResponse implements NewAPIResponse {
-  factory _NewAPIResponse(
+abstract class _NewsAPIResponse implements NewsAPIResponse {
+  factory _NewsAPIResponse(
       {required final String status,
       required final int totalResults,
-      required final List<NewsAPIArticle> articles}) = _$_NewAPIResponse;
+      required final List<NewsAPIArticle> articles}) = _$_NewsAPIResponse;
 
-  factory _NewAPIResponse.fromJson(Map<String, dynamic> json) =
-      _$_NewAPIResponse.fromJson;
+  factory _NewsAPIResponse.fromJson(Map<String, dynamic> json) =
+      _$_NewsAPIResponse.fromJson;
 
   @override
   String get status;
@@ -203,6 +203,6 @@ abstract class _NewAPIResponse implements NewAPIResponse {
   List<NewsAPIArticle> get articles;
   @override
   @JsonKey(ignore: true)
-  _$$_NewAPIResponseCopyWith<_$_NewAPIResponse> get copyWith =>
+  _$$_NewsAPIResponseCopyWith<_$_NewsAPIResponse> get copyWith =>
       throw _privateConstructorUsedError;
 }
