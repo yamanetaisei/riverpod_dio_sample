@@ -20,9 +20,9 @@ NewsAPIArticle _$NewsAPIArticleFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$NewsAPIArticle {
-  String get title => throw _privateConstructorUsedError;
-  String get url => throw _privateConstructorUsedError;
-  String get urlToImage => throw _privateConstructorUsedError;
+  String? get title => throw _privateConstructorUsedError;
+  String? get url => throw _privateConstructorUsedError;
+  String? get urlToImage => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -35,7 +35,7 @@ abstract class $NewsAPIArticleCopyWith<$Res> {
   factory $NewsAPIArticleCopyWith(
           NewsAPIArticle value, $Res Function(NewsAPIArticle) then) =
       _$NewsAPIArticleCopyWithImpl<$Res>;
-  $Res call({String title, String url, String urlToImage});
+  $Res call({String? title, String? url, String? urlToImage});
 }
 
 /// @nodoc
@@ -57,15 +57,15 @@ class _$NewsAPIArticleCopyWithImpl<$Res>
       title: title == freezed
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       url: url == freezed
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       urlToImage: urlToImage == freezed
           ? _value.urlToImage
           : urlToImage // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
     ));
   }
 }
@@ -77,7 +77,7 @@ abstract class _$$_NewsAPIArticleCopyWith<$Res>
           _$_NewsAPIArticle value, $Res Function(_$_NewsAPIArticle) then) =
       __$$_NewsAPIArticleCopyWithImpl<$Res>;
   @override
-  $Res call({String title, String url, String urlToImage});
+  $Res call({String? title, String? url, String? urlToImage});
 }
 
 /// @nodoc
@@ -101,15 +101,15 @@ class __$$_NewsAPIArticleCopyWithImpl<$Res>
       title: title == freezed
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       url: url == freezed
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       urlToImage: urlToImage == freezed
           ? _value.urlToImage
           : urlToImage // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
     ));
   }
 }
@@ -119,18 +119,17 @@ class __$$_NewsAPIArticleCopyWithImpl<$Res>
 class _$_NewsAPIArticle
     with DiagnosticableTreeMixin
     implements _NewsAPIArticle {
-  _$_NewsAPIArticle(
-      {required this.title, required this.url, required this.urlToImage});
+  _$_NewsAPIArticle({this.title, this.url, this.urlToImage});
 
   factory _$_NewsAPIArticle.fromJson(Map<String, dynamic> json) =>
       _$$_NewsAPIArticleFromJson(json);
 
   @override
-  final String title;
+  final String? title;
   @override
-  final String url;
+  final String? url;
   @override
-  final String urlToImage;
+  final String? urlToImage;
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -181,19 +180,19 @@ class _$_NewsAPIArticle
 
 abstract class _NewsAPIArticle implements NewsAPIArticle {
   factory _NewsAPIArticle(
-      {required final String title,
-      required final String url,
-      required final String urlToImage}) = _$_NewsAPIArticle;
+      {final String? title,
+      final String? url,
+      final String? urlToImage}) = _$_NewsAPIArticle;
 
   factory _NewsAPIArticle.fromJson(Map<String, dynamic> json) =
       _$_NewsAPIArticle.fromJson;
 
   @override
-  String get title;
+  String? get title;
   @override
-  String get url;
+  String? get url;
   @override
-  String get urlToImage;
+  String? get urlToImage;
   @override
   @JsonKey(ignore: true)
   _$$_NewsAPIArticleCopyWith<_$_NewsAPIArticle> get copyWith =>

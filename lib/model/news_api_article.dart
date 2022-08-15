@@ -7,9 +7,9 @@ part 'news_api_article.g.dart';
 @freezed
 class NewsAPIArticle with _$NewsAPIArticle {
   factory NewsAPIArticle({
-    required String title,
-    required String url,
-    required String urlToImage,
+    String? title,
+    String? url,
+    String? urlToImage,
   }) = _NewsAPIArticle;
 
   factory NewsAPIArticle.fromJson(Map<String, dynamic> json) => _$NewsAPIArticleFromJson(json);
