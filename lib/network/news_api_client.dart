@@ -18,8 +18,8 @@ class NewsAPIClient {
 
     if (response.statusCode == 200) {
       try {
-        final dataWith = response.data as dynamic;
-        final data = dataWith.map((e) => NewAPIResponse.fromJson(e));
+        final dataWithResponse = response.data as dynamic;
+        final data = dataWithResponse.map((e) => NewAPIResponse.fromJson(e));
         return data;
       } catch(e) {
         rethrow;
