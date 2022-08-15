@@ -2,7 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:riverpod_dio_sample/model/news_api_response.dart';
 
 class NewsAPIClient {
-  Future<NewAPIResponse?> fetchNewAPIResponse() async {
+  Future<NewAPIResponse> fetchNewAPIResponse() async {
     final dio = Dio();
     const url = "https://newsapi.orgv2/everything";
     final response = await dio.get(url);
@@ -16,6 +16,6 @@ class NewsAPIClient {
         rethrow;
       }
     }
-    return null;
+    throw Error;
   }
 }
