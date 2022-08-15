@@ -7,7 +7,7 @@ final key = newsAPIKey;
 class NewsAPIClient {
   Future<NewAPIResponse> fetchNewAPIResponse(String q) async {
     final dio = Dio();
-    const url = "https://newsapi.orgv2/everything";
+    const url = "https://newsapi.org/v2/everything";
     final response = await dio.get(
         url,
         queryParameters: {
