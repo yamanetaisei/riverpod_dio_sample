@@ -47,4 +47,4 @@ app.*.map.json
 /android/app/release
 
 # NewsAPI Key
-lib/Key
+lib/key
