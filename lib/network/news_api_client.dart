@@ -10,6 +10,10 @@ class NewsAPIClient {
     const url = "https://newsapi.org/v2/everything";
     final response = await dio.get(
         url,
+        options: Options(
+            contentType: Headers.jsonContentType,
+            responseType: ResponseType.json
+        ),
         queryParameters: {
           'apiKey': key,
           'q': q
