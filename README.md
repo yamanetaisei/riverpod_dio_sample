@@ -1,6 +1,6 @@
 ## 概要
 
-Riverpod, dioの壁打ちプロジェクト
+Riverpod, dio, freezedの壁打ちプロジェクト
 
 ## Screen Shot 
 
