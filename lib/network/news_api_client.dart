@@ -1,6 +1,5 @@
 import 'package:dio/dio.dart';
 import 'package:riverpod_dio_sample/model/news_api_article.dart';
-import 'package:riverpod_dio_sample/model/news_api_response.dart';
 import '../key/NewsAPIKey.dart';
 
 final key = newsAPIKey;
