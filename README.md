@@ -1,16 +1,11 @@
-# riverpod_dio_sample
+## 概要
 
-lesson Riverpod Dio
+Riverpod, dioの壁打ちプロジェクト
 
-## Getting Started
+## Screen Shot 
 
-This project is a starting point for a Flutter application.
+<img src="https://user-images.githubusercontent.com/50735539/184916171-a050fa22-c7c7-44e9-a3a5-fd1510a3b844.png" width="200px">
 
-A few resources to get you started if this is your first Flutter project:
+## 使用API
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[New API](https://newsapi.org/)
