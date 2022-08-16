@@ -4,6 +4,6 @@ class NewsAPIRepository {
   final api = NewsAPIClient();
   dynamic fetchEverything(String q) async {
     final data = await api.fetchNewsAPIResponse(q);
-    return data.articles;
+    return data;
   }
 }
