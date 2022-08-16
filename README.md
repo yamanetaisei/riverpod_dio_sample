@@ -1,6 +1,6 @@
 ## 概要
 
-Riverpod, dio, freezedの壁打ちプロジェクト
+[Riverpod](https://pub.dev/packages/riverpod), [dio](https://pub.dev/packages/dio), [freezed](https://pub.dev/packages/freezed)の壁打ちプロジェクト
 
 ## Screen Shot 
 
