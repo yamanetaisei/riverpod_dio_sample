@@ -5,7 +5,7 @@ import '../key/NewsAPIKey.dart';
 final key = newsAPIKey;
 
 class NewsAPIClient {
-  Future<List<NewsAPIArticle>> fetchNewsAPIResponse(String q) async {
+  Future<List<NewsAPIArticle>> fetchNewsAPIResponse() async {
     final dio = Dio();
     const url = "https://newsapi.org/v2/everything";
     final response = await dio.get(
@@ -16,7 +16,7 @@ class NewsAPIClient {
         ),
         queryParameters: {
           'apiKey': key,
-          'q': q
+          'q': 'Flutter'
         }
     );
 
